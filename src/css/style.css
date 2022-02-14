@@ -1,0 +1,360 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  background-color: #EDF4F4;
+  font-family: 'Poppins', sans-serif;
+  color: #16324f;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #16324f;
+}
+
+header {
+  padding: 1rem 2rem;
+  background-color: #9FC2E3;
+  box-shadow: 0 2px 3px #16324f40;
+  position: sticky;
+  top: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.justify {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.logo {
+  margin-left: -0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  fill:none;
+  stroke:#16324f;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+  stroke-width:2rem;
+  width:4rem;
+  height:4rem;
+}
+
+#hamburger-menu {
+  width:3rem;
+  height:3rem;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 5.6rem;
+  left: -100%;
+  background-color: #9FC2E3;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  box-shadow: 0 2px 3px #16324f40;
+  transition: 0.4s ease;
+}
+
+nav a {
+  line-height: 4.8rem;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s ease;
+  transition-delay: 0.2s;
+}
+
+nav a:hover {
+  background-color: #2A628F;
+  color: #EDF4F4;
+  transition-delay: 0s;
+}
+
+.active {
+  left: 0;
+  opacity: 1;
+}
+
+main {
+  padding: 3rem 2rem;
+}
+
+.cards {
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 0 2px 6px #16324f40;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card-container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.card-container h3 {
+  font-weight: 400;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.6rem;
+}
+
+.price {
+  color: #2A628F;
+  font-weight: 700;
+}
+
+button.cart,
+.manage-btn {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  border-radius: 5px;
+  border: 1px solid #2a628f70;
+  color: #2A628F;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+}
+
+button.cart:hover,
+.manage-btn:hover {
+  background-color: #9FC2E3;
+  box-shadow: inset 0 0 6px #16324f40;
+}
+
+.glasses-form {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.glasses-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+img.display {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #16324f40;
+  margin-bottom: 2rem;
+}
+
+label[for=productImage] {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #2a628f70;
+  color: #2A628F;
+  outline: none;
+  background-color: #ffffff;
+  letter-spacing: 1px;
+  transition: 0.4s ease;
+}
+
+label[for=productImage]:hover {
+  background-color: #9FC2E3;
+  box-shadow: inset 0 0 6px #16324f40;
+}
+
+.select-file {
+  display: none;
+}
+
+.glasses-info {
+  gap: 1rem;
+}
+
+.glasses-description textarea {
+  resize: none;
+  height: 12rem;
+}
+
+.glasses-form input[type=text],
+.glasses-description textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px #2A628F;
+  outline: none;
+  padding: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #2A628F;
+  color: #EDF4F4;
+  letter-spacing: 2px;
+  transition: 0.4s ease;
+}
+
+.buttons button:hover {
+  background-color: #3E92CC;
+  box-shadow: inset 0 0 6px 1px #16324f40;
+}
+
+.manage-btns {
+  gap: 2rem;
+}
+
+.delete-btns {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width:600px) {
+  .glasses-form {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .glasses-image,
+  .glasses-info {
+    flex: 1;
+  }
+
+  .delete-card {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .delete-card .card {
+    display: block;
+    flex: 1;
+  }
+
+  .delete-card img {
+    width: 100%;
+  }
+
+  .delete-card .card-container {
+    flex: 1;
+  }
+
+  .delete-btns {
+    flex-direction: column;
+    flex: 1;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width:820px) {
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .header.container {
+    max-width: 992px;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    opacity: 1;
+    width: auto;
+    box-shadow: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    padding: 0 1rem;
+  }
+
+  nav a:hover {
+    background-color: transparent;
+    color: #16324f;
+  }
+
+  nav a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #16324f;
+    margin-top: -0.4rem;
+    transform: scale(0);
+    transition: 0.4s ease;
+    transition-delay: 0.2s;
+  }
+
+  nav a:hover::after{
+    transform: scale(1);
+    transition-delay: 0s;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
